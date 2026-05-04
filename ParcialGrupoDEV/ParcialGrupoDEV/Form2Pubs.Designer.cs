@@ -1,0 +1,135 @@
+﻿namespace ParcialGrupoDEV
+{
+    partial class Form2Pubs
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.btnConsulAvan = new System.Windows.Forms.Button();
+            this.btnConsulInter = new System.Windows.Forms.Button();
+            this.btnConsulBasic = new System.Windows.Forms.Button();
+            this.cmbBasic = new System.Windows.Forms.ComboBox();
+            this.cmbInter = new System.Windows.Forms.ComboBox();
+            this.cmbAvan = new System.Windows.Forms.ComboBox();
+            this.dgvConsulPubs = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulPubs)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // btnConsulAvan
+            // 
+            this.btnConsulAvan.Location = new System.Drawing.Point(727, 35);
+            this.btnConsulAvan.Name = "btnConsulAvan";
+            this.btnConsulAvan.Size = new System.Drawing.Size(323, 46);
+            this.btnConsulAvan.TabIndex = 7;
+            this.btnConsulAvan.Text = "Consultas Avanzadas";
+            this.btnConsulAvan.UseVisualStyleBackColor = true;
+            this.btnConsulAvan.Click += new System.EventHandler(this.btnConsulAvan_Click);
+            // 
+            // btnConsulInter
+            // 
+            this.btnConsulInter.Location = new System.Drawing.Point(379, 35);
+            this.btnConsulInter.Name = "btnConsulInter";
+            this.btnConsulInter.Size = new System.Drawing.Size(323, 46);
+            this.btnConsulInter.TabIndex = 6;
+            this.btnConsulInter.Text = "Consultas Intermedias";
+            this.btnConsulInter.UseVisualStyleBackColor = true;
+            this.btnConsulInter.Click += new System.EventHandler(this.btnConsulInter_Click);
+            // 
+            // btnConsulBasic
+            // 
+            this.btnConsulBasic.Location = new System.Drawing.Point(28, 35);
+            this.btnConsulBasic.Name = "btnConsulBasic";
+            this.btnConsulBasic.Size = new System.Drawing.Size(323, 46);
+            this.btnConsulBasic.TabIndex = 5;
+            this.btnConsulBasic.Text = "Consultas Basicas";
+            this.btnConsulBasic.UseVisualStyleBackColor = true;
+            this.btnConsulBasic.Click += new System.EventHandler(this.btnConsulBasic_Click);
+            // 
+            // cmbBasic
+            // 
+            this.cmbBasic.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBasic.FormattingEnabled = true;
+            this.cmbBasic.Location = new System.Drawing.Point(28, 87);
+            this.cmbBasic.Name = "cmbBasic";
+            this.cmbBasic.Size = new System.Drawing.Size(323, 28);
+            this.cmbBasic.TabIndex = 8;
+            // 
+            // cmbInter
+            // 
+            this.cmbInter.Location = new System.Drawing.Point(379, 87);
+            this.cmbInter.Name = "cmbInter";
+            this.cmbInter.Size = new System.Drawing.Size(323, 28);
+            this.cmbInter.TabIndex = 9;
+            // 
+            // cmbAvan
+            // 
+            this.cmbAvan.Location = new System.Drawing.Point(727, 87);
+            this.cmbAvan.Name = "cmbAvan";
+            this.cmbAvan.Size = new System.Drawing.Size(323, 28);
+            this.cmbAvan.TabIndex = 8;
+            // 
+            // dgvConsulPubs
+            // 
+            this.dgvConsulPubs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConsulPubs.Location = new System.Drawing.Point(13, 287);
+            this.dgvConsulPubs.Name = "dgvConsulPubs";
+            this.dgvConsulPubs.RowHeadersWidth = 62;
+            this.dgvConsulPubs.RowTemplate.Height = 28;
+            this.dgvConsulPubs.Size = new System.Drawing.Size(1112, 479);
+            this.dgvConsulPubs.TabIndex = 4;
+            this.dgvConsulPubs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Form2Pubs
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1137, 781);
+            this.Controls.Add(this.btnConsulAvan);
+            this.Controls.Add(this.btnConsulInter);
+            this.Controls.Add(this.btnConsulBasic);
+            this.Controls.Add(this.cmbAvan);
+            this.Controls.Add(this.cmbInter);
+            this.Controls.Add(this.cmbBasic);
+            this.Controls.Add(this.dgvConsulPubs);
+            this.Name = "Form2Pubs";
+            this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2Pubs_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulPubs)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button btnConsulAvan;
+        private System.Windows.Forms.Button btnConsulInter;
+        private System.Windows.Forms.Button btnConsulBasic;
+        private System.Windows.Forms.ComboBox cmbBasic;
+        private System.Windows.Forms.ComboBox cmbInter;
+        private System.Windows.Forms.ComboBox cmbAvan;
+        private System.Windows.Forms.DataGridView dgvConsulPubs;
+    }
+}

@@ -1,0 +1,194 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ParcialGrupoDEV
+{
+    public partial class Form1Northwind : Form
+    {
+        public Form1Northwind()
+        {
+            InitializeComponent();
+            // Inicializar opciones de consultas
+            cmbBasic.Items.AddRange(new object[] { "Clientes", "Productos", "Pedidos", "Productos bajo stock (<20)" });
+            cmbInter.Items.AddRange(new object[] { "Ventas por cliente", "Pedidos en rango de fechas", "Total vendido por producto" });
+            cmbAvan.Items.AddRange(new object[] { "Top 10 clientes por gasto", "Clientes con promedio de pedido alto", "Productos por diversidad de clientes" });
+            if (cmbBasic.Items.Count > 0) cmbBasic.SelectedIndex = 0;
+            if (cmbInter.Items.Count > 0) cmbInter.SelectedIndex = 0;
+            if (cmbAvan.Items.Count > 0) cmbAvan.SelectedIndex = 0;
+        }
+
+        private void btnConsulBasic_Click(object sender, EventArgs e)
+        {
+            var opcion = (cmbBasic.SelectedItem ?? string.Empty).ToString();
+            using (var ctx = new NorthwindEntities())
+            {
+                switch (opcion)
+                {
+                    case "Clientes":
+                        var clientes = ctx.Customers
+                            .Select(c => new { c.CustomerID, c.CompanyName, c.ContactName, c.City, c.Country })
+                            .OrderBy(c => c.CompanyName)
+                            .ToList();
+                        dgvConsulNorthwind.DataSource = clientes;
+                        break;
+                    case "Productos":
+                        var productos = ctx.Products
+                            .Select(p => new { p.ProductID, p.ProductName, p.UnitPrice, p.UnitsInStock, p.Discontinued })
+                            .OrderBy(p => p.ProductName)
+                            .ToList();
+                        dgvConsulNorthwind.DataSource = productos;
+                        break;
+                    case "Pedidos":
+                        var pedidos = ctx.Orders
+                            .Select(o => new { o.OrderID, o.CustomerID, o.OrderDate, o.ShippedDate, o.Freight })
+                            .OrderByDescending(o => o.OrderDate)
+                            .ToList();
+                        dgvConsulNorthwind.DataSource = pedidos;
+                        break;
+                    case "Productos bajo stock (<20)":
+                        var lowStock = ctx.Products
+                            .Where(p => p.UnitsInStock < 20)
+                            .Select(p => new { p.ProductID, p.ProductName, p.UnitsInStock })
+                            .OrderBy(p => p.UnitsInStock)
+                            .ToList();
+                        dgvConsulNorthwind.DataSource = lowStock;
+                        break;
+                    default:
+                        dgvConsulNorthwind.DataSource = null;
+                        break;
+                }
+            }
+        }
+
+        private void btnConsulInter_Click(object sender, EventArgs e)
+        {
+            var opcion = (cmbInter.SelectedItem ?? string.Empty).ToString();
+            using (var ctx = new NorthwindEntities())
+            {
+                switch (opcion)
+                {
+                    case "Ventas por cliente":
+                        var ventasPorCliente = ctx.Orders
+                            .Where(o => o.Order_Details.Any())
+                            .GroupBy(o => new { o.CustomerID, o.Customers.CompanyName })
+                            .Select(g => new
+                            {
+                                CustomerID = g.Key.CustomerID,
+                                CompanyName = g.Key.CompanyName,
+                                TotalVentas = g.SelectMany(o => o.Order_Details)
+                                               .AsEnumerable()
+                                               .Sum(od => od.UnitPrice * od.Quantity * (1 - (decimal)od.Discount))
+                            })
+                            .OrderByDescending(x => x.TotalVentas)
+                            .ToList();
+                        dgvConsulNorthwind.DataSource = ventasPorCliente;
+                        break;
+                    case "Pedidos en rango de fechas":
+                        var start = new DateTime(1997, 1, 1);
+                        var end = new DateTime(1998, 12, 31);
+                        var pedidosRango = ctx.Orders
+                            .Where(o => o.OrderDate >= start && o.OrderDate <= end)
+                            .Select(o => new { o.OrderID, o.CustomerID, o.OrderDate, o.ShippedDate, o.Freight })
+                            .OrderBy(o => o.OrderDate)
+                            .ToList();
+                        dgvConsulNorthwind.DataSource = pedidosRango;
+                        break;
+                    case "Total vendido por producto":
+                        var vendidoPorProducto = ctx.Order_Details
+                            .GroupBy(od => new { od.ProductID, od.Products.ProductName })
+                            .Select(g => new
+                            {
+                                ProductID = g.Key.ProductID,
+                                ProductName = g.Key.ProductName,
+                                TotalCantidad = g.Sum(x => (int?)x.Quantity) ?? 0,
+                                TotalVentas = g.AsEnumerable().Sum(x => x.UnitPrice * x.Quantity * (1 - (decimal)x.Discount))
+                            })
+                            .OrderByDescending(x => x.TotalVentas)
+                            .ToList();
+                        dgvConsulNorthwind.DataSource = vendidoPorProducto;
+                        break;
+                    default:
+                        dgvConsulNorthwind.DataSource = null;
+                        break;
+                }
+            }
+        }
+
+        private void btnConsulAvan_Click(object sender, EventArgs e)
+        {
+            var opcion = (cmbAvan.SelectedItem ?? string.Empty).ToString();
+            using (var ctx = new NorthwindEntities())
+            {
+                switch (opcion)
+                {
+                    case "Top 10 clientes por gasto":
+                        var topClientes = ctx.Customers
+                            .Select(c => new
+                            {
+                                c.CustomerID,
+                                c.CompanyName,
+                                TotalGastado = c.Orders
+                                    .SelectMany(o => o.Order_Details)
+                                    .AsEnumerable()
+                                    .Sum(od => od.UnitPrice * od.Quantity * (1 - (decimal)od.Discount)),
+                                Pedidos = c.Orders.Count()
+                            })
+                            .OrderByDescending(x => x.TotalGastado)
+                            .Take(10)
+                            .ToList();
+                        dgvConsulNorthwind.DataSource = topClientes;
+                        break;
+                    case "Clientes con promedio de pedido alto":
+                        // Clientes cuyo promedio de gasto por pedido es > 500
+                        var clientesPromedio = ctx.Customers
+                            .Select(c => new
+                            {
+                                c.CustomerID,
+                                c.CompanyName,
+                                PromedioPorPedido = c.Orders
+                                    .Select(o => o.Order_Details
+                                        .AsEnumerable()
+                                        .Sum(od => od.UnitPrice * od.Quantity * (1 - (decimal)od.Discount)))
+                                    .Average()
+                            })
+                            .Where(x => x.PromedioPorPedido > 500m)
+                            .OrderByDescending(x => x.PromedioPorPedido)
+                            .ToList();
+                        dgvConsulNorthwind.DataSource = clientesPromedio;
+                        break;
+                    case "Productos por diversidad de clientes":
+                        var productosDiversidad = ctx.Order_Details
+                            .GroupBy(od => new { od.ProductID, od.Products.ProductName })
+                            .Select(g => new
+                            {
+                                g.Key.ProductID,
+                                g.Key.ProductName,
+                                DistintosClientes = g.Select(x => x.Orders.CustomerID).Distinct().Count(),
+                                TotalVentas = g.AsEnumerable().Sum(x => x.UnitPrice * x.Quantity * (1 - (decimal)x.Discount))
+                            })
+                            .OrderByDescending(x => x.DistintosClientes)
+                            .ThenByDescending(x => x.TotalVentas)
+                            .Take(20)
+                            .ToList();
+                        dgvConsulNorthwind.DataSource = productosDiversidad;
+                        break;
+                    default:
+                        dgvConsulNorthwind.DataSource = null;
+                        break;
+                }
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+    }
+}

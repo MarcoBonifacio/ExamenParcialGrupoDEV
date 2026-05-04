@@ -1,0 +1,103 @@
+﻿namespace ParcialGrupoDEV
+{
+    partial class Form1Northwind
+    {
+        /// <summary>
+        /// Variable del diseñador necesaria.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Limpiar los recursos que se estén usando.
+        /// </summary>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Código generado por el Diseñador de Windows Forms
+
+        /// <summary>
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.dgvConsulNorthwind = new System.Windows.Forms.DataGridView();
+            this.btnConsulBasic = new System.Windows.Forms.Button();
+            this.btnConsulInter = new System.Windows.Forms.Button();
+            this.btnConsulAvan = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulNorthwind)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dgvConsulNorthwind
+            // 
+            this.dgvConsulNorthwind.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConsulNorthwind.Location = new System.Drawing.Point(12, 248);
+            this.dgvConsulNorthwind.Name = "dgvConsulNorthwind";
+            this.dgvConsulNorthwind.RowHeadersWidth = 62;
+            this.dgvConsulNorthwind.RowTemplate.Height = 28;
+            this.dgvConsulNorthwind.Size = new System.Drawing.Size(1112, 479);
+            this.dgvConsulNorthwind.TabIndex = 0;
+            this.dgvConsulNorthwind.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // btnConsulBasic
+            // 
+            this.btnConsulBasic.Location = new System.Drawing.Point(44, 36);
+            this.btnConsulBasic.Name = "btnConsulBasic";
+            this.btnConsulBasic.Size = new System.Drawing.Size(212, 46);
+            this.btnConsulBasic.TabIndex = 1;
+            this.btnConsulBasic.Text = "Consultas Basicas";
+            this.btnConsulBasic.UseVisualStyleBackColor = true;
+            this.btnConsulBasic.Click += new System.EventHandler(this.btnConsulBasic_Click);
+            // 
+            // btnConsulInter
+            // 
+            this.btnConsulInter.Location = new System.Drawing.Point(320, 36);
+            this.btnConsulInter.Name = "btnConsulInter";
+            this.btnConsulInter.Size = new System.Drawing.Size(212, 46);
+            this.btnConsulInter.TabIndex = 2;
+            this.btnConsulInter.Text = "Consultas Intermedias";
+            this.btnConsulInter.UseVisualStyleBackColor = true;
+            this.btnConsulInter.Click += new System.EventHandler(this.btnConsulInter_Click);
+            // 
+            // btnConsulAvan
+            // 
+            this.btnConsulAvan.Location = new System.Drawing.Point(591, 36);
+            this.btnConsulAvan.Name = "btnConsulAvan";
+            this.btnConsulAvan.Size = new System.Drawing.Size(212, 46);
+            this.btnConsulAvan.TabIndex = 3;
+            this.btnConsulAvan.Text = "Consultas Avanzadas";
+            this.btnConsulAvan.UseVisualStyleBackColor = true;
+            this.btnConsulAvan.Click += new System.EventHandler(this.btnConsulAvan_Click);
+            // 
+            // Form1Northwind
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1136, 739);
+            this.Controls.Add(this.btnConsulAvan);
+            this.Controls.Add(this.btnConsulInter);
+            this.Controls.Add(this.btnConsulBasic);
+            this.Controls.Add(this.dgvConsulNorthwind);
+            this.Name = "Form1Northwind";
+            this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulNorthwind)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.DataGridView dgvConsulNorthwind;
+        private System.Windows.Forms.Button btnConsulBasic;
+        private System.Windows.Forms.Button btnConsulInter;
+        private System.Windows.Forms.Button btnConsulAvan;
+    }
+}
+

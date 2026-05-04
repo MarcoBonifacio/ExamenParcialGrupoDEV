@@ -1,0 +1,325 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\form2pubs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\form2pubs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\form1northwind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\form1northwind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\form2pubs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\form2pubs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\bll\\northwinddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\bll\\northwinddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\northwinddiagrama.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\northwinddiagrama.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\bll\\pubsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\bll\\pubsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\bll\\pubsdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\bll\\pubsdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\bll\\northwindservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\bll\\northwindservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\form1northwind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\form1northwind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\order_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\order_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\form1northwind.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\form1northwind.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\form2pubs.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\form2pubs.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\pubs.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\pubs.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\utils\\csvexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\utils\\csvexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|c:\\users\\user\\desktop\\parcial grupo dev\\parcialgrupodev\\parcialgrupodev\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE15E1D1-1156-445D-B9C5-2F6CB9BB2F5F}|ParcialGrupoDEV\\ParcialGrupoDEV.csproj|solutionrelative:parcialgrupodev\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form1.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\Form1.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form1.cs",
+              "RelativeToolTip": "ParcialGrupoDEV\\Form1.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T00:51:24.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form1.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\Form1.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ParcialGrupoDEV\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T00:50:34.239Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NorthwindService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\BLL\\NorthwindService.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\BLL\\NorthwindService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\BLL\\NorthwindService.cs",
+              "RelativeToolTip": "ParcialGrupoDEV\\BLL\\NorthwindService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T00:40:09.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NorthwindDtos.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\BLL\\NorthwindDtos.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\BLL\\NorthwindDtos.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\BLL\\NorthwindDtos.cs",
+              "RelativeToolTip": "ParcialGrupoDEV\\BLL\\NorthwindDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T00:39:41.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NorthwindDiagrama.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\NorthwindDiagrama.edmx",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\NorthwindDiagrama.edmx",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\NorthwindDiagrama.edmx [Diagram1]",
+              "RelativeToolTip": "ParcialGrupoDEV\\NorthwindDiagrama.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2026-04-29T23:24:56.332Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2Pubs.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form2Pubs.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\Form2Pubs.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form2Pubs.cs",
+              "RelativeToolTip": "ParcialGrupoDEV\\Form2Pubs.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T23:38:24.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form2Pubs.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form2Pubs.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\Form2Pubs.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form2Pubs.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ParcialGrupoDEV\\Form2Pubs.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T23:22:08.419Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1Northwind.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form1Northwind.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\Form1Northwind.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form1Northwind.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ParcialGrupoDEV\\Form1Northwind.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T23:19:10.985Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Program.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Program.cs",
+              "RelativeToolTip": "ParcialGrupoDEV\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T00:25:59.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form1.Designer.cs",
+              "RelativeToolTip": "ParcialGrupoDEV\\Form1.Designer.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T00:53:26.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PubsDtos.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\BLL\\PubsDtos.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\BLL\\PubsDtos.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\BLL\\PubsDtos.cs",
+              "RelativeToolTip": "ParcialGrupoDEV\\BLL\\PubsDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T00:40:23.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PubsService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\BLL\\PubsService.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\BLL\\PubsService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\BLL\\PubsService.cs",
+              "RelativeToolTip": "ParcialGrupoDEV\\BLL\\PubsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T00:40:56.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CsvExporter.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Utils\\CsvExporter.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\Utils\\CsvExporter.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Utils\\CsvExporter.cs",
+              "RelativeToolTip": "ParcialGrupoDEV\\Utils\\CsvExporter.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAABBwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T00:41:14.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form1Northwind.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form1Northwind.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\Form1Northwind.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form1Northwind.cs",
+              "RelativeToolTip": "ParcialGrupoDEV\\Form1Northwind.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T23:41:04.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Pubs.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Pubs.edmx",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\Pubs.edmx",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Pubs.edmx [Diagram1]",
+              "RelativeToolTip": "ParcialGrupoDEV\\Pubs.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2026-04-29T23:28:24.454Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Order_Details.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Order_Details.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\Order_Details.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Order_Details.cs",
+              "RelativeToolTip": "ParcialGrupoDEV\\Order_Details.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T23:52:35.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Form1Northwind.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form1Northwind.Designer.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\Form1Northwind.Designer.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form1Northwind.Designer.cs",
+              "RelativeToolTip": "ParcialGrupoDEV\\Form1Northwind.Designer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T00:00:58.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Form2Pubs.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form2Pubs.Designer.cs",
+              "RelativeDocumentMoniker": "ParcialGrupoDEV\\Form2Pubs.Designer.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\parcial grupo dev\\ParcialGrupoDEV\\ParcialGrupoDEV\\Form2Pubs.Designer.cs",
+              "RelativeToolTip": "ParcialGrupoDEV\\Form2Pubs.Designer.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T00:22:18.693Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

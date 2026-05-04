@@ -1,0 +1,15 @@
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\bin\Debug\ParcialGrupoDEV.exe.config
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\bin\Debug\ParcialGrupoDEV.exe
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\bin\Debug\ParcialGrupoDEV.pdb
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\obj\Debug\ParcialGrupoDEV.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\obj\Debug\ParcialGrupoDEV.Form1Northwind.resources
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\obj\Debug\ParcialGrupoDEV.Form2Pubs.resources
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\obj\Debug\ParcialGrupoDEV.Properties.Resources.resources
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\obj\Debug\ParcialGrupoDEV.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\obj\Debug\ParcialGrupoDEV.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\obj\Debug\ParcialG.11796B7D.Up2Date
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\obj\Debug\ParcialGrupoDEV.exe
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\obj\Debug\ParcialGrupoDEV.pdb
+C:\Users\USER\Desktop\parcial grupo dev\ParcialGrupoDEV\ParcialGrupoDEV\obj\Debug\ParcialGrupoDEV.Form1.resources

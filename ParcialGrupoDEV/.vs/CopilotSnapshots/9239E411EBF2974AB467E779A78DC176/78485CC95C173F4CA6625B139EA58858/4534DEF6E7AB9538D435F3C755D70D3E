@@ -1,0 +1,210 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Data.Entity;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ParcialGrupoDEV
+{
+    public partial class Form2Pubs : Form
+    {
+        public Form2Pubs()
+        {
+            InitializeComponent();
+            // Inicializar ComboBoxes
+            cmbBasic.Items.AddRange(new object[] { "Publishers", "Titles", "Authors", "Titles con ventas bajas (<50)" });
+            cmbInter.Items.AddRange(new object[] { "Ventas por título", "Ventas en rango de fechas", "Ingresos por editorial" });
+            cmbAvan.Items.AddRange(new object[] { "Top 10 títulos por ingreso", "Autores con promedio de ingreso alto", "Títulos por diversidad de tiendas" });
+            if (cmbBasic.Items.Count > 0) cmbBasic.SelectedIndex = 0;
+            if (cmbInter.Items.Count > 0) cmbInter.SelectedIndex = 0;
+            if (cmbAvan.Items.Count > 0) cmbAvan.SelectedIndex = 0;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Form2Pubs_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConsulBasic_Click(object sender, EventArgs e)
+        {
+            var opcion = (cmbBasic.SelectedItem ?? string.Empty).ToString();
+            using (var ctx = new pubsEntities())
+            {
+                switch (opcion)
+                {
+                    case "Publishers":
+                        var pubs = ctx.publishers
+                            .Select(p => new { p.pub_id, p.pub_name, p.city, p.country })
+                            .OrderBy(p => p.pub_name)
+                            .ToList();
+                        dgvConsulPubs.DataSource = pubs;
+                        break;
+                    case "Titles":
+                        var titles = ctx.titles
+                            .Select(t => new { t.title_id, t.title, t.type, t.price, t.ytd_sales })
+                            .OrderBy(t => t.title)
+                            .ToList();
+                        dgvConsulPubs.DataSource = titles;
+                        break;
+                    case "Authors":
+                        var authors = ctx.authors
+                            .Select(a => new { a.au_id, a.au_fname, a.au_lname, a.city })
+                            .OrderBy(a => a.au_lname)
+                            .ToList();
+                        dgvConsulPubs.DataSource = authors;
+                        break;
+                    case "Titles con ventas bajas (<50)":
+                        var lowSales = ctx.titles
+                            .Where(t => t.ytd_sales < 50)
+                            .Select(t => new { t.title_id, t.title, t.ytd_sales })
+                            .OrderBy(t => t.ytd_sales)
+                            .ToList();
+                        dgvConsulPubs.DataSource = lowSales;
+                        break;
+                    default:
+                        dgvConsulPubs.DataSource = null;
+                        break;
+                }
+            }
+        }
+
+        private void btnConsulInter_Click(object sender, EventArgs e)
+        {
+            var opcion = (cmbInter.SelectedItem ?? string.Empty).ToString();
+            using (var ctx = new pubsEntities())
+            {
+                switch (opcion)
+                {
+                    case "Ventas por título":
+                        var ventasPorTitulo = ctx.sales
+                            .ToList()
+                            .GroupBy(s => new { s.title_id, s.titles.title })
+                            .Select(g => new
+                            {
+                                TitleID = g.Key.title_id,
+                                Title = g.Key.title,
+                                TotalCantidad = g.Sum(x => x.qty)
+                            })
+                            .OrderByDescending(x => x.TotalCantidad)
+                            .ToList();
+                        dgvConsulPubs.DataSource = ventasPorTitulo;
+                        break;
+                    case "Ventas en rango de fechas":
+                        var start = new DateTime(1996, 1, 1);
+                        var end = new DateTime(1997, 12, 31);
+                        var ventasRango = ctx.sales
+                            .Where(s => s.ord_date >= start && s.ord_date <= end)
+                            .Select(s => new { s.ord_num, s.ord_date, s.title_id, s.qty })
+                            .OrderBy(s => s.ord_date)
+                            .ToList();
+                        dgvConsulPubs.DataSource = ventasRango;
+                        break;
+                    case "Ingresos por editorial":
+                        // Total revenue = sum(qty * price) grouped by publisher
+                        var ingresosPorPub = ctx.sales
+                            .ToList()
+                            .Join(ctx.titles.ToList(), s => s.title_id, t => t.title_id, (s, t) => new { s, t })
+                            .GroupBy(x => new { x.t.pub_id, x.t.publishers.pub_name })
+                            .Select(g => new
+                            {
+                                PubID = g.Key.pub_id,
+                                PubName = g.Key.pub_name,
+                                TotalIngresos = g.Sum(x => x.s.qty * (x.t.price ?? 0m))
+                            })
+                            .OrderByDescending(x => x.TotalIngresos)
+                            .ToList();
+                        dgvConsulPubs.DataSource = ingresosPorPub;
+                        break;
+                    default:
+                        dgvConsulPubs.DataSource = null;
+                        break;
+                }
+            }
+        }
+
+        private void btnConsulAvan_Click(object sender, EventArgs e)
+        {
+            var opcion = (cmbAvan.SelectedItem ?? string.Empty).ToString();
+            using (var ctx = new pubsEntities())
+            {
+                switch (opcion)
+                {
+                    case "Top 10 títulos por ingreso":
+                        var topTitulos = ctx.sales
+                            .ToList()
+                            .Join(ctx.titles.ToList(), s => s.title_id, t => t.title_id, (s, t) => new { s, t })
+                            .GroupBy(x => new { x.t.title_id, x.t.title })
+                            .Select(g => new
+                            {
+                                TitleID = g.Key.title_id,
+                                Title = g.Key.title,
+                                Ingreso = g.Sum(x => x.s.qty * (x.t.price ?? 0m))
+                            })
+                            .OrderByDescending(x => x.Ingreso)
+                            .Take(10)
+                            .ToList();
+                        dgvConsulPubs.DataSource = topTitulos;
+                        break;
+                    case "Autores con promedio de ingreso alto":
+                        // promedio de ingreso por título del autor > 10000
+                        // Para evitar errores por valores null en sumas, precalculamos ingresos por título en memoria
+                        var allTitles = ctx.titles.ToList();
+                        var priceByTitle = allTitles.ToDictionary(t => t.title_id, t => (t.price ?? 0m));
+                        var allSales = ctx.sales.ToList();
+                        var ingresosPorTitulo = allSales
+                            .GroupBy(s => s.title_id)
+                            .ToDictionary(g => g.Key, g => g.Sum(s => s.qty * (priceByTitle.ContainsKey(g.Key) ? priceByTitle[g.Key] : 0m)));
+
+                        var autoresProm = ctx.titleauthor
+                            .ToList()
+                            .GroupBy(ta => new { ta.au_id, ta.authors.au_fname, ta.authors.au_lname })
+                            .Select(g => new
+                            {
+                                AuthorID = g.Key.au_id,
+                                Name = g.Key.au_fname + " " + g.Key.au_lname,
+                                PromedioIngreso = g.Select(ta => ta.title_id)
+                                    .Where(tid => !string.IsNullOrEmpty(tid))
+                                    .Select(tid => ingresosPorTitulo.ContainsKey(tid) ? ingresosPorTitulo[tid] : 0m)
+                                    .DefaultIfEmpty(0m)
+                                    .Average()
+                            })
+                            .Where(x => x.PromedioIngreso > 10000m)
+                            .OrderByDescending(x => x.PromedioIngreso)
+                            .ToList();
+                        dgvConsulPubs.DataSource = autoresProm;
+                        break;
+                    case "Títulos por diversidad de tiendas":
+                        var titulosDiversidad = ctx.sales
+                            .ToList()
+                            .GroupBy(s => new { s.title_id, s.titles.title })
+                            .Select(g => new
+                            {
+                                TitleID = g.Key.title_id,
+                                Title = g.Key.title,
+                                DistintasTiendas = g.Select(x => x.stor_id).Distinct().Count(),
+                                TotalCantidad = g.Sum(x => x.qty)
+                            })
+                            .OrderByDescending(x => x.DistintasTiendas)
+                            .ThenByDescending(x => x.TotalCantidad)
+                            .Take(20)
+                            .ToList();
+                        dgvConsulPubs.DataSource = titulosDiversidad;
+                        break;
+                    default:
+                        dgvConsulPubs.DataSource = null;
+                        break;
+                }
+            }
+        }
+    }
+}
